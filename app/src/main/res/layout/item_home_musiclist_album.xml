@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/album_musicList1_album1_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="10dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/item_album_coverImg_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_watercity_album"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:src="@drawable/widget_black_play"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_album_title_tv"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="물풍경시티 bgm"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/item_album_singer_tv"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="포켓몬스터"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

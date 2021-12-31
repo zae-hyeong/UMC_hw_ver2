@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--뷰 페이저에 들어갈 프레그먼트-->
+    <!--프레그먼트가 들어가면 원치 않는 흰공간도 다 들어가지 않나?? -> BannerFragment 코틀린 파일에서 해결-->
+
+    <!--여기 들어가는 소스는 그냥 뷰페이저에 어떻게 표시되는가를 나타냄-->
+    <!--실제로 해당하는 사진이 들어오진 않음(실제 사진 추가는 코틀린 파일에서)-->
+
+    <ImageView
+        android:id="@+id/banner_image_iv"
+        android:src="@drawable/img_home_viewpager_exp2"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
